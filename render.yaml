@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ibm-hr-attrition_model
+    name: ibm-attrition_model
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
