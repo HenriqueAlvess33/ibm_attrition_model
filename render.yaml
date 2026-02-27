@@ -1,10 +1,8 @@
 services:
   - type: web
     name: ibm-attrition_model
-    runtime: python
+  env: python                # <-- campo correto (sem "runtime")
     plan: free
+    pythonVersion: 3.11.9    # <-- versão fixada de forma direta
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run model_applying.py --server.port $PORT --server.address 0.0.0.0
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.9 # <--- AQUI você define a versão
