@@ -464,7 +464,7 @@ def main():
             st.number_input(
                 "Distância de casa (km)",
                 min_value=0,
-                max_value=20,
+                max_value=30,
                 value=5,
                 step=1,
                 key="distance_from_home",
@@ -546,7 +546,7 @@ def main():
             st.number_input(
                 "Salário por hora",
                 min_value=10,
-                max_value=70,
+                max_value=80,
                 value=30,
                 step=1,
                 key="hourly_rate",
